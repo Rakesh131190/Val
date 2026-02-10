@@ -1,27 +1,37 @@
-# 💖 Valentine's Interactive Web Story
+# 💖 Interactive Valentine's Day Invitation
 
-An interactive, automated web experience designed to tell a beautiful story through music, video backgrounds, and a playful "Will You Be My Valentine?" surprise.
+A beautiful, interactive web-based invitation designed to ask that special someone: *"Will you be my Valentine?"* This project features a playful "No" button that dodges the cursor, floating heart animations, and a heartfelt surprise message upon clicking "Yes."
 
 ## ✨ Features
-* **Automated Storytelling:** Smooth auto-scrolling scenes (every 9 seconds) with custom text and images.
-* **Interactive Valentine's Card:** A playful "No" button that runs away from the cursor and a celebration effect when "Yes" is clicked.
-* **Immersive Media:** Background video support and background music integration.
-* **Responsive Design:** Optimized for both Desktop and Mobile viewing.
-* **No-Crop Image Display:** All memories are displayed in full using `object-fit: contain`.
+
+* **Dodging "No" Button:** The "No" button moves randomly when hovered or clicked, making it playfully difficult to decline.
+* **Auto-Redirect/Force Yes:** After 5 attempts to click "No," the script automatically celebrates and accepts a "Yes" on behalf of the user.
+* **Floating Hearts:** Dynamic CSS and JavaScript-powered heart balloons that float across the screen.
+* **Celebration Effect:** A burst of heart emojis across the screen when the "Yes" button is clicked.
+* **Responsive Design:** Works perfectly on both desktop and mobile devices.
+* **Hidden Details:** A structured message reveals the date, time, and a special "Code" for a surprise gift.
 
 ## 🚀 How to Use
 
-1.  **Clone/Download** this repository.
-2.  **Add your media:**
-    * Place your background video as `My_video1.mp4`.
-    * Place your background music as `Mash-up_song.mp3`.
-    * Add your photos named `Image1.png`, `Image2.png`, etc., up to `Final Image.png`.
-3.  **Open `index.html`** in any modern web browser.
-4.  **Deploy:** Upload these files to **GitHub Pages** for a live link you can share!
+1.  **Download** the `index.html` file.
+2.  **Open** the file in any modern web browser (Chrome, Safari, Edge, or Firefox).
+3.  **To Personalize:** * Open the `index.html` in a text editor (like Notepad or VS Code).
+    * Search for the `<div class="message-details">` section.
+    * Update the Date, Time, and Location to match your specific plans.
 
-## 🛠️ Customization
+## 🛠️ Technical Details
 
-### Changing the Scroll Speed
-To change how long each scene stays on screen, locate the following line at the bottom of `index.html`:
-```javascript
-}, 9000); // Change 9000 (9 seconds) to your preferred time in milliseconds
+* **Language:** HTML5, CSS3, JavaScript (ES6+).
+* **Icons:** Powered by [FontAwesome](https://fontawesome.com/).
+* **Styling:** Custom CSS animations (`heartbeat`, `float`, `fadeIn`).
+* **Logic:** * Event listeners for `mouseover` and `click` to handle button movement.
+    * DOM manipulation to generate randomized floating background elements.
+
+## 📸 Preview
+
+The interface consists of a soft pink gradient background with a central frosted-glass card containing the invitation.
+
+
+
+---
+Made with ❤️ for someone special.
